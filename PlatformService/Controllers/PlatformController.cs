@@ -1,8 +1,10 @@
+using System.Windows.Input;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using PlatformService.Data;
 using PlatformService.Dtos;
 using PlatformService.Models;
+using PlatformService.SyncDataServices.Http;
 
 namespace PlatformService.Controllers
 {
@@ -12,10 +14,13 @@ namespace PlatformService.Controllers
     {
         private readonly IPlatformRepo _repo;
         private readonly IMapper _mapper;
-        public PlatformController(IPlatformRepo repo, IMapper mapper)
+        private readonly ICommandDataClient _commandDataClient;
+
+        public PlatformController(IPlatformRepo repo, IMapper mapper, ICommandDataClient commandDataClient)
         {
             _repo = repo;
             _mapper = mapper;
+            _commandDataClient = commandDataClient;
 
         }
 
@@ -26,7 +31,7 @@ namespace PlatformService.Controllers
             return Ok(_mapper.Map<IEnumerable<PlatformReadDto>>(platforms));
         }
 
-        [HttpGet("{id}", Name ="getPlatformById")]
+        [HttpGet("{id}", Name = "getPlatformById")]
         public ActionResult<PlatformReadDto> getPlatformById(int id)
         {
             var Platform = _repo.getPlatformById(id);
@@ -42,13 +47,24 @@ namespace PlatformService.Controllers
         }
 
         [HttpPost]
-        public ActionResult<PlatformReadDto> createPlatform(PlatformCreateDto platformCreateDto)
+        public async Task<ActionResult<PlatformReadDto>> createPlatform(PlatformCreateDto platformCreateDto)
         {
             var platformModel = _mapper.Map<Platform>(platformCreateDto);
             _repo.CreatePlatform(platformModel);
             _repo.SaveChanges();
 
-            return CreatedAtRoute(nameof(getPlatformById),new {id=platformModel.Id}, platformModel);
+            var PlatformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
+
+            try
+            {
+                await _commandDataClient.SendPlatformToCommand(PlatformReadDto);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"failed {ex.Message}");
+            }
+
+            return CreatedAtRoute(nameof(getPlatformById), new { id = platformModel.Id }, platformModel);
 
         }
 

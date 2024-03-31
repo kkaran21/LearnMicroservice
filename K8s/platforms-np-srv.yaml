@@ -1,3 +1,4 @@
+#the main entry for outside world is configured here
 apiVersion: v1
 kind: Service
 metadata:
@@ -9,5 +10,5 @@ spec:
   ports:
     - name: platformservice
       protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 80  #outside traffic sends request to this port which forwards it to 8080
+      targetPort: 8080 
