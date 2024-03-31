@@ -26,7 +26,7 @@ spec:
   selector:
     app: commandservice
   ports:
-  - name: commandservice
+  - name: commandservice # "-" specifies an array
     protocol: TCP
     port: 80          #exposed port of container
     targetPort: 8080   #the port in which application is running inside the port
