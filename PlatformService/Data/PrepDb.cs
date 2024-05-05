@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PlatformService.Models;
 
@@ -5,17 +6,29 @@ namespace PlatformService.Data
 {
     public static class PrepDb
     {
-        public static void prepPopulation(IApplicationBuilder app)
+        public static void prepPopulation(IApplicationBuilder app, bool isProd)
         {
 
             using (var serviceScope = app.ApplicationServices.CreateScope())
             {
-                seedData(serviceScope.ServiceProvider.GetService<AppDbContext>());
+                seedData(serviceScope.ServiceProvider.GetService<AppDbContext>() ,isProd);
             }
         }
 
-        private static void seedData(AppDbContext appDbContext)
+        private static void seedData(AppDbContext appDbContext, bool isProd)
         {
+            if(isProd)
+            {
+                try
+                {
+                    Console.WriteLine("trying migrations");
+                    appDbContext.Database.Migrate();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"exception occured while migrating {ex.Message}");
+                }
+            }
             if (!appDbContext.Platforms.Any())
             {
                 appDbContext.Platforms.AddRange(
