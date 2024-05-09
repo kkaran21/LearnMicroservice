@@ -36,6 +36,8 @@ namespace CommandService.Controllers
             return Ok(_mapper.Map<IEnumerable<CommandReadDto>>(Commands));
         }
 
+        
+
 
     }
 }
