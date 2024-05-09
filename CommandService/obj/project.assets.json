@@ -1394,24 +1394,26 @@
     ]
   },
   "packageFolders": {
-    "/home/karan/.nuget/packages/": {}
+    "C:\\Users\\KARAN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/karan/LearnMicroservice/CommandService/CommandService.csproj",
+      "projectUniqueName": "C:\\Users\\KARAN\\Desktop\\LearnMicroservice\\CommandService\\CommandService.csproj",
       "projectName": "CommandService",
-      "projectPath": "/home/karan/LearnMicroservice/CommandService/CommandService.csproj",
-      "packagesPath": "/home/karan/.nuget/packages/",
-      "outputPath": "/home/karan/LearnMicroservice/CommandService/obj/",
+      "projectPath": "C:\\Users\\KARAN\\Desktop\\LearnMicroservice\\CommandService\\CommandService.csproj",
+      "packagesPath": "C:\\Users\\KARAN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KARAN\\Desktop\\LearnMicroservice\\CommandService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/karan/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\KARAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1481,7 +1483,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/karan/.dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

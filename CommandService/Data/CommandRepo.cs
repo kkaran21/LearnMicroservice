@@ -12,12 +12,13 @@ namespace CommandService.Data
 
         public void createCommand(int PlatformId, Command command)
         {
-            throw new NotImplementedException();
+             command.PlatformId = PlatformId;
+             appDbContext.Add(command);
         }
 
         public void createPlatform(Platform platform)
         {
-            throw new NotImplementedException();
+             appDbContext.Platforms.Add(platform);
         }
 
         public IEnumerable<Platform> getAllPlatforms()
