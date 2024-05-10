@@ -12,13 +12,21 @@ namespace CommandService.Data
 
         public void createCommand(int PlatformId, Command command)
         {
-             command.PlatformId = PlatformId;
-             appDbContext.Add(command);
+            if (platformExists(PlatformId) && command != null)
+            {
+                command.PlatformId = PlatformId;
+            }
+
+            appDbContext.Add(command);
         }
 
         public void createPlatform(Platform platform)
         {
-             appDbContext.Platforms.Add(platform);
+            if(platform == null)
+            {
+                throw new ArgumentNullException(nameof(platform));
+            }
+            appDbContext.Platforms.Add(platform);
         }
 
         public IEnumerable<Platform> getAllPlatforms()
