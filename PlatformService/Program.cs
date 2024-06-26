@@ -25,6 +25,7 @@ if(builder.Environment.IsDevelopment())
 else
 {
     Console.WriteLine("using sql server");
+    Console.WriteLine($"connection string is {builder.Configuration.GetConnectionString("PlatformsConn")}");
     builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConn")));
 
 }
