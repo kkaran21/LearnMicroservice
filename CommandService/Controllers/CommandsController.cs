@@ -19,7 +19,7 @@ namespace CommandService.Controllers
             _mapper = mapper;
         }
 
-        [Route("getCommandsForPlatform")]
+        [Route("getCommandsForPlatform")]   
         [HttpGet]
         public ActionResult<IEnumerable<CommandReadDto>> getCommandsForPlatform(int platformId)
         {

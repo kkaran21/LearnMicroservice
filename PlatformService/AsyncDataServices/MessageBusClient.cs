@@ -1,3 +1,5 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using PlatformService.Dtos;
 using RabbitMQ.Client;
 
@@ -6,8 +8,8 @@ namespace PlatformService.AsyncDataServices
     public class MessageBusClient : IMessageBusClient
     {
         private readonly IConfiguration _config;
-        private readonly IModel  _channel;
-            private readonly IConnection  _conn;
+        private readonly IModel _channel;
+        private readonly IConnection _conn;
 
 
         public MessageBusClient(IConfiguration configuration)
@@ -19,21 +21,57 @@ namespace PlatformService.AsyncDataServices
 
             try
             {
-                 _conn = factory.CreateConnection();
+                _conn = factory.CreateConnection();
                 _channel = _conn.CreateModel();
                 _channel.ExchangeDeclare("trigger", ExchangeType.Fanout);
-                // _conn.ConnectionShutdown +=
-            }
-            catch (System.Exception)
-            {
+                Console.WriteLine(" connected to rabbit mq");
+                _conn.ConnectionShutdown += RabbitMq_ConnectionShutDown;
 
-                throw;
+
+
             }
+            catch (System.Exception e)
+            {
+                Console.WriteLine($"could not connect to rabbit mq {e.Message}");
+            }
+        }
+
+        private void RabbitMq_ConnectionShutDown(object? sender, ShutdownEventArgs e)
+        {
+            Console.WriteLine("---> rabbitmq connection shutdown");
+
         }
 
         public void PublishToPlatform(PlatformPublishDto platformPublishDto)
         {
-            throw new NotImplementedException();
+            if (_conn.IsOpen)
+            {
+                publishMessage(platformPublishDto);
+            }
+            else
+            {
+                Console.WriteLine("Connection closed message will not be sent");
+            }
+        }
+
+        private void publishMessage(dynamic Message)
+        {
+
+            var message = JsonSerializer.Serialize(Message);
+            byte[] messageBodyBytes = System.Text.Encoding.UTF8.GetBytes(message);
+
+            _channel.BasicPublish(exchange: "trigger", routingKey: "", basicProperties: null, messageBodyBytes);
+            Console.WriteLine("we have published message");
+        }
+
+        public void dispose()
+        {
+            Console.WriteLine("MessageBus disposed");
+            if (_conn.IsOpen)
+            {
+                _channel.Close();
+                _conn.Close();
+            }
         }
     }
 }

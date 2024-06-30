@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|c:\\users\\khadk\\onedrive\\desktop\\learnmicroservice\\commandservice\\eventprocessor\\eventprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|solutionrelative:eventprocessor\\eventprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|c:\\users\\khadk\\onedrive\\desktop\\learnmicroservice\\commandservice\\controllers\\commandscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|solutionrelative:controllers\\commandscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|c:\\users\\khadk\\onedrive\\desktop\\learnmicroservice\\commandservice\\data\\commandrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|solutionrelative:data\\commandrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|c:\\users\\khadk\\onedrive\\desktop\\learnmicroservice\\commandservice\\commandservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|solutionrelative:commandservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|c:\\users\\khadk\\onedrive\\desktop\\learnmicroservice\\commandservice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|c:\\users\\khadk\\onedrive\\desktop\\learnmicroservice\\commandservice\\eventprocessor\\ieventprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|solutionrelative:eventprocessor\\ieventprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|c:\\users\\khadk\\onedrive\\desktop\\learnmicroservice\\commandservice\\asyncdataservices\\messagebussubscriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|solutionrelative:asyncdataservices\\messagebussubscriber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|c:\\users\\khadk\\onedrive\\desktop\\learnmicroservice\\commandservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C042CE-7890-4B9B-B4FE-6613CE4588A6}|CommandService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommandsController.cs",
+              "DocumentMoniker": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\Controllers\\CommandsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CommandsController.cs",
+              "ToolTip": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\Controllers\\CommandsController.cs",
+              "RelativeToolTip": "Controllers\\CommandsController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T17:37:48.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MessageBusSubscriber.cs",
+              "DocumentMoniker": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\AsyncDataServices\\MessageBusSubscriber.cs",
+              "RelativeDocumentMoniker": "AsyncDataServices\\MessageBusSubscriber.cs",
+              "ToolTip": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\AsyncDataServices\\MessageBusSubscriber.cs",
+              "RelativeToolTip": "AsyncDataServices\\MessageBusSubscriber.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T17:30:55.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T17:30:49.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommandService",
+              "DocumentMoniker": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\CommandService.csproj",
+              "RelativeDocumentMoniker": "CommandService.csproj",
+              "ToolTip": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\CommandService.csproj",
+              "RelativeToolTip": "CommandService.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-29T17:16:02.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T17:11:14.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CommandRepo.cs",
+              "DocumentMoniker": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\Data\\CommandRepo.cs",
+              "RelativeDocumentMoniker": "Data\\CommandRepo.cs",
+              "ToolTip": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\Data\\CommandRepo.cs",
+              "RelativeToolTip": "Data\\CommandRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T17:09:47.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\EventProcessor\\EventProcessor.cs",
+              "RelativeDocumentMoniker": "EventProcessor\\EventProcessor.cs",
+              "ToolTip": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\EventProcessor\\EventProcessor.cs",
+              "RelativeToolTip": "EventProcessor\\EventProcessor.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAswC4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T17:06:04.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IEventProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\EventProcessor\\IEventProcessor.cs",
+              "RelativeDocumentMoniker": "EventProcessor\\IEventProcessor.cs",
+              "ToolTip": "C:\\Users\\khadk\\OneDrive\\Desktop\\LearnMicroservice\\CommandService\\EventProcessor\\IEventProcessor.cs",
+              "RelativeToolTip": "EventProcessor\\IEventProcessor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T17:06:01.097Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

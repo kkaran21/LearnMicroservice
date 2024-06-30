@@ -1,6 +1,7 @@
 using System.Windows.Input;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using PlatformService.AsyncDataServices;
 using PlatformService.Data;
 using PlatformService.Dtos;
 using PlatformService.Models;
@@ -12,12 +13,14 @@ namespace PlatformService.Controllers
     [ApiController]
     public class PlatformController : ControllerBase
     {
+        private readonly IMessageBusClient _messageBusClient;
         private readonly IPlatformRepo _repo;
         private readonly IMapper _mapper;
         private readonly ICommandDataClient _commandDataClient;
 
-        public PlatformController(IPlatformRepo repo, IMapper mapper, ICommandDataClient commandDataClient)
+        public PlatformController(IPlatformRepo repo, IMapper mapper, ICommandDataClient commandDataClient,IMessageBusClient messageBusClient)
         {
+            _messageBusClient = messageBusClient;
             _repo = repo;
             _mapper = mapper;
             _commandDataClient = commandDataClient;
@@ -55,9 +58,24 @@ namespace PlatformService.Controllers
 
             var PlatformReadDto = _mapper.Map<PlatformReadDto>(platformModel);
 
+            ////sync message using httpclient
             try
             {
-                await _commandDataClient.SendPlatformToCommand(PlatformReadDto);
+                 await _commandDataClient.SendPlatformToCommand(PlatformReadDto); 
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"failed {ex.Message}");
+            }
+
+            ////async message using messagebus
+            try
+            {
+                var message = _mapper.Map<PlatformPublishDto>(PlatformReadDto);
+                message.Event = "Platform_Published";
+                _messageBusClient.PublishToPlatform(message);
+
             }
             catch (Exception ex)
             {
