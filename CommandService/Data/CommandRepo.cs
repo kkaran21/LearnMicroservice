@@ -27,6 +27,8 @@ namespace CommandService.Data
                 throw new ArgumentNullException(nameof(platform));
             }
             _appDbContext.Platforms.Add(platform);
+            _appDbContext.SaveChanges();
+            
         }
 
         public bool externalPlatformExists(int externalPlatformId)

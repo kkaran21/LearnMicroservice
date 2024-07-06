@@ -126,3 +126,7 @@ C:\Users\khadk\OneDrive\Desktop\LearnMicroservice\CommandService\obj\Debug\net8.
 C:\Users\khadk\OneDrive\Desktop\LearnMicroservice\CommandService\obj\Debug\net8.0\CommandService.pdb
 C:\Users\khadk\OneDrive\Desktop\LearnMicroservice\CommandService\obj\Debug\net8.0\CommandService.genruntimeconfig.cache
 C:\Users\khadk\OneDrive\Desktop\LearnMicroservice\CommandService\obj\Debug\net8.0\ref\CommandService.dll
+C:\Users\khadk\OneDrive\Desktop\LearnMicroservice\CommandService\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\khadk\OneDrive\Desktop\LearnMicroservice\CommandService\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\khadk\OneDrive\Desktop\LearnMicroservice\CommandService\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\khadk\OneDrive\Desktop\LearnMicroservice\CommandService\bin\Debug\net8.0\Grpc.Net.Common.dll

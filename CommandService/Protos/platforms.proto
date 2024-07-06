@@ -1,0 +1,19 @@
+syntax = "proto3";
+option csharp_namespace = "PlatformService";
+
+service grpcPlatform {
+  rpc getAllPlatforms (emptyRequest) returns (platformResponse);
+}
+
+message emptyRequest {}
+ 
+message grpcPlatformModel{
+    int32 platformId =1;
+    string name = 2;
+    string publisher = 3;
+}
+
+message platformResponse {
+    repeated grpcPlatformModel platforms = 1;
+}
+
